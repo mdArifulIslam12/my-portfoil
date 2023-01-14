@@ -1,9 +1,11 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import "./Projects.css";
-import ManufactuerComputer from '../Assets/computer.png'
+import ManufactuerComputer from '../Assets/computer-featured.png'
 import Computer from '../Assets/computer2.png'
 import Travel from '../Assets/tarvel.png'
+import Doctor from '../Assets/doctor.png'
+import Food from '../Assets/food.png'
 import { DiReact, DiJavascript, DiGithubBadge, DiHtml5,DiNodejs,
   DiMongodb, } from "react-icons/di";
 import { FaLink, FaCss3 } from "react-icons/fa";
@@ -20,6 +22,55 @@ export const Projects = () => {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={6} className="project-card">
+            <Card className="project-card-view" style={{ textAlign: "center" }}>
+              <Card.Img variant="top" src={Doctor} alt="Manunfacturer Computer" />
+              <Card.Body>
+                <Card.Title style={{ fontWeight: "800" }}>
+                  Doctor Portal
+                </Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                It's a CRUD operation-based website that includes several user dashboards.Authorized people can manage per day one appoinment ,dashboard , and Addreview. Admin for Add doctor,manange all doctor and manage all payment system. Login with firebase Google authentication features and Stripe payment gateway system
+                </Card.Text>
+                <div className="Techstacks">
+                  <DiReact className="Techstacks-icons" />
+                  <DiJavascript className="Techstacks-icons" />
+                  <FaCss3 className="Techstacks-icons" />
+                  <DiHtml5 className="Techstacks-icons" />
+                  <DiNodejs className="Techstacks-icons" />
+                  <DiMongodb className="Techstacks-icons" />
+                  <SiTailwindcss className="Techstacks-icons" />
+                </div>
+                <Button
+                  variant="primary"
+                  style={{ marginTop: "5%" }}
+                  href="https://github.com/mdArifulIslam12/doctors-portal-client"
+                  target="_blank"
+                >
+                  {" "}
+                  <DiGithubBadge /> Client Code
+                </Button>
+                <Button
+                  variant="primary"
+                  style={{ marginTop: "5%",marginLeft: "5%", }}
+                  href="https://github.com/mdArifulIslam12/doctors-portal-server"
+                  target="_blank"
+                >
+                  {" "}
+                  <DiGithubBadge /> Server Code
+                </Button>
+                <Button
+                  variant="primary"
+                  style={{ marginLeft: "5%", marginTop: "5%" }}
+                  href="https://doctors-portals-6b2f1.web.app/"
+                  target="_blank"
+                >
+                  {" "}
+                  <FaLink /> Link
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col md={6} className="project-card">
             <Card className="project-card-view" style={{ textAlign: "center" }}>
               <Card.Img variant="top" src={ManufactuerComputer} alt="Manunfacturer Computer" />
@@ -158,7 +209,46 @@ export const Projects = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={6}></Col> 
+          <Col md={6} className="project-card">
+            <Card className="project-card-view" style={{ textAlign: "center" }}>
+              <Card.Img
+                variant="top"
+                src={Food}
+                alt="Travel"
+              />
+              <Card.Body>
+                <Card.Title style={{ fontWeight: "800" }}>Food Restaurant</Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                It's a individual based Food Restaurant Service. The single page describes the food order service. Api food data has been used is this project. Any food for search this is project or blog.
+                </Card.Text>
+                <div className="Techstacks">
+                  <DiJavascript className="Techstacks-icons" />
+                  <FaCss3 className="Techstacks-icons" />
+                  <DiHtml5 className="Techstacks-icons" />
+                  <FaBootstrap className="Techstacks-icons" />
+                </div>
+                <Button
+                  variant="primary"
+                  style={{ marginTop: "5%" }}
+                  href="https://github.com/mdArifulIslam12/food"
+                  target="_blank"
+                >
+                  {" "}
+                  <DiGithubBadge /> Github
+                </Button>
+                <Button
+                  variant="primary"
+                  style={{ marginLeft: "5%", marginTop: "5%" }}
+                  href="https://mdarifulislam12.github.io/food/"
+                  target="_blank"
+                >
+                  {" "}
+                  <FaLink /> Link
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={6}></Col>
         </Row>
       </Container>
     </Container>

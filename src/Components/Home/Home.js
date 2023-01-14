@@ -21,7 +21,7 @@ export const Home = () => {
                 <div style={{ textAlign: "left",paddingLeft:49 }} className='mt-4'>
                   <Type />
                 </div>
-                <a className="text-white text-decoration-none" href="https://drive.google.com/file/d/12nB0Ut4l4Z4FD-Fi-R4NZYEjb4wmWmVs/view" target='_blank' style={{marginLeft:49 }} >
+                <a className="text-white text-decoration-none" href="https://drive.google.com/file/d/1U7qzGF1IvzIBnmV1NsR9RSsMF3wQuz8b/" target='_blank' style={{marginLeft:49 }} >
                  
                 < button className="btn text-white resume mt-5 border">
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
